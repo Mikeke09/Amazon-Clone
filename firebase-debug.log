@@ -1,0 +1,93 @@
+[debug] [2024-12-03T19:57:20.606Z] ----------------------------------------------------------------------
+[debug] [2024-12-03T19:57:20.608Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nirto\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-03T19:57:20.608Z] CLI Version:   13.27.0
+[debug] [2024-12-03T19:57:20.608Z] Platform:      win32
+[debug] [2024-12-03T19:57:20.608Z] Node Version:  v20.17.0
+[debug] [2024-12-03T19:57:20.609Z] Time:          Tue Dec 03 2024 22:57:20 GMT+0300 (Arabian Standard Time)
+[debug] [2024-12-03T19:57:20.609Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-03T19:57:20.614Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-03T19:57:20.614Z] > authorizing via signed-in user (mikebedy@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Nirto\Desktop\Evangadi\phase 4\Amazon\amazon-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-03T19:58:09.171Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:09.172Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:09.177Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-12-03T19:58:10.631Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-12-03T19:58:10.631Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project clone-68e92 (amazon clone) 
+[info] 
+=== Functions Setup
+[debug] [2024-12-03T19:58:35.070Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-03T19:58:35.070Z] > authorizing via signed-in user (mikebedy@gmail.com)
+[debug] [2024-12-03T19:58:35.070Z] [iam] checking project clone-68e92 for permissions ["firebase.projects.get"]
+[debug] [2024-12-03T19:58:35.071Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:35.071Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:35.071Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-68e92:testIamPermissions [none]
+[debug] [2024-12-03T19:58:35.071Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-68e92:testIamPermissions x-goog-quota-user=projects/clone-68e92
+[debug] [2024-12-03T19:58:35.071Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-68e92:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-03T19:58:36.967Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-68e92:testIamPermissions 200
+[debug] [2024-12-03T19:58:36.967Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-68e92:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-03T19:58:36.968Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:36.968Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:36.968Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:36.968Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:36.968Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-03T19:58:36.968Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/clone-68e92
+[debug] [2024-12-03T19:58:36.969Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-03T19:58:36.969Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/clone-68e92
+[debug] [2024-12-03T19:58:39.040Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-03T19:58:39.040Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-03T19:58:39.041Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-03T19:58:39.041Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-12-03T19:58:39.041Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:39.041Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:39.041Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-12-03T19:58:39.041Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/clone-68e92
+[debug] [2024-12-03T19:58:40.947Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-12-03T19:58:40.947Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-12-03T19:58:50.951Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:50.951Z] Checked if tokens are valid: true, expires at: 1733259376557
+[debug] [2024-12-03T19:58:50.951Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-03T19:58:50.951Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/clone-68e92
+[debug] [2024-12-03T19:58:53.042Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-03T19:58:53.043Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clone-68e92/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2024-12-03T20:00:19.138Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Nirto\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:269:49)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[error] 
+[error] Error: An unexpected error has occurred.
